@@ -2,10 +2,15 @@
   "name": "server",
   "version": "1.0.0",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "start": "node src/server"
+  },
   "author": "Anthon <anthon.holmqvist@softhouse.se>",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "20.11.24"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "3.525.0"
   }
 }
