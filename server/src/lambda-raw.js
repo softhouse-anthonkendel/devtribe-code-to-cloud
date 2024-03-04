@@ -12,7 +12,7 @@ export const handler = async (event, context) => {
   logger.info("event: ", event);
   logger.info("context: ", context);
 
-  const path = event.rawPath;
+  const path = event.path;
   logger.info("path: ", path);
 
   switch (path) {

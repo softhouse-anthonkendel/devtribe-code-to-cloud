@@ -1,4 +1,5 @@
 import * as cdk from "aws-cdk-lib";
+import { Cors, LambdaIntegration, LambdaRestApi } from "aws-cdk-lib/aws-apigateway";
 import { HttpApi, HttpMethod } from "aws-cdk-lib/aws-apigatewayv2";
 import { HttpLambdaIntegration } from "aws-cdk-lib/aws-apigatewayv2-integrations";
 import * as lambda from "aws-cdk-lib/aws-lambda";
@@ -17,15 +18,14 @@ export class CdkStack extends cdk.Stack {
       handler: "src/lambda-raw.handler",
       code: lambda.Code.fromAsset(pathFromRoot("server")),
     });
-    const serverIntegration = new HttpLambdaIntegration(
-      buildId("Integration"),
-      server
-    );
-    const api = new HttpApi(this, buildId("Api"));
-    api.addRoutes({
-      path: "/{proxy+}",
-      methods: [HttpMethod.ANY],
-      integration: serverIntegration,
+    const api = new LambdaRestApi(this, buildId('Api'), {
+      handler: server,
+      proxy: true,
+      defaultCorsPreflightOptions: {
+        allowCredentials: true,
+        allowMethods: Cors.ALL_METHODS,
+        allowOrigins: Cors.ALL_ORIGINS,
+      },
     });
   }
 }

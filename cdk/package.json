@@ -5,11 +5,14 @@
     "cdk": "bin/cdk.js"
   },
   "scripts": {
-    "build": "tsc",
     "build:watch": "tsc -w",
-    "synth": "cdk synth",
+    "build": "tsc",
+    "cdk": "cdk",
+    "cdklocal": "cdklocal",
     "deploy": "cdk deploy",
-    "cdk": "cdk"
+    "local:bootstrap": "cdklocal bootstrap",
+    "local:deploy": "cdklocal deploy",
+    "synth": "cdk synth"
   },
   "dependencies": {
     "aws-cdk-lib": "2.131.0",
