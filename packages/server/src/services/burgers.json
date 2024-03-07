@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Tribute Burger",
     "restaurant": "Honest Burgers",
-    "web": "www.honestburgers.co.uk",
+    "web": "https://www.honestburgers.co.uk",
     "description": "A mouth-watering honest beef burger",
     "ingredients": [
       "beef",
@@ -29,7 +29,7 @@
     "id": 1,
     "name": "Pulled Mooshie",
     "restaurant": "Mooshies",
-    "web": "www.veganburger.org",
+    "web": "https://www.veganburger.org",
     "description": "Spicy vegan burger with jackfruit",
     "ingredients": ["jackfruit", "coleslaw", "gluten free bun"],
     "addresses": [
@@ -522,7 +522,7 @@
     "id": 18,
     "name": "Mojitto Burger",
     "restaurant": "Burger King India",
-    "web": "www.mojitto.com",
+    "web": "https://www.mojitto.com",
     "description": "Burger a day keeps the fat away",
     "ingredients": ["bread", "maida", "chick", "patty"],
     "addresses": [
@@ -539,7 +539,7 @@
     "id": 19,
     "name": "Double Slab Burger",
     "restaurant": "Slab Burgers",
-    "web": "www.slabburgers.com",
+    "web": "https://www.slabburgers.com",
     "description": "taste of hormone-free running cows",
     "ingredients": [
       "beef",
@@ -801,7 +801,7 @@
     "id": 25,
     "name": "Cajun Black Bean Burger",
     "restaurant": "The Chicago Diner",
-    "web": "www.veggiediner.com",
+    "web": "https://www.veggiediner.com",
     "description": "a hearty veggie burger with a kick that goes great with sweet potato fries",
     "ingredients": [
       "spicy black bean veggie patty",
@@ -836,7 +836,7 @@
     "id": 26,
     "name": "Hatch Green Chile Bacon Burger",
     "restaurant": "Whataburger",
-    "web": "www.whataburger.com",
+    "web": "https://www.whataburger.com",
     "description": "burger with hatch green chiles, bacon and cheese",
     "ingredients": [
       "beef",
@@ -860,7 +860,7 @@
     "id": 27,
     "name": "The Street Burgers and Coctail Bar Prague 1",
     "restaurant": "The Street",
-    "web": "www.thestreet.cz",
+    "web": "https://www.thestreet.cz",
     "description": "American, Bar, International, European, Vegetarian Friendly",
     "ingredients": [
       "beef",

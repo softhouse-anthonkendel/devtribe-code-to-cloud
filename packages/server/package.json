@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "dev": "node src/server",
     "start": "node src/server"
   },
   "author": "Anthon <anthon.holmqvist@softhouse.se>",
