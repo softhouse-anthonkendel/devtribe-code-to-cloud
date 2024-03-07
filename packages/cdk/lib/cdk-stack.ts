@@ -6,7 +6,7 @@ import * as lambda from "aws-cdk-lib/aws-lambda";
 import { Construct } from "constructs";
 import * as path from "node:path";
 
-const pathFromRoot = (value: string) => path.resolve("..", value);
+const pathFromRoot = (value: string) => path.resolve("../..", value);
 const buildId = (value: string) => ["CodeToCloud", value].join("");
 
 export class CdkStack extends cdk.Stack {
@@ -16,7 +16,7 @@ export class CdkStack extends cdk.Stack {
     const server = new lambda.Function(this, buildId("Server"), {
       runtime: lambda.Runtime.NODEJS_20_X,
       handler: "src/lambda-raw.handler",
-      code: lambda.Code.fromAsset(pathFromRoot("server")),
+      code: lambda.Code.fromAsset(pathFromRoot("packages/server")),
     });
     const api = new LambdaRestApi(this, buildId('Api'), {
       handler: server,
