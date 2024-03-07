@@ -1,5 +1,6 @@
 import "./main.scss";
 
+const PROD = import.meta.env.PROD;
 let appConfig = undefined;
 
 const getAppConfig = async () => {
@@ -11,6 +12,11 @@ const getAppConfig = async () => {
   const json = await response.json();
 
   appConfig = json;
+
+  if (PROD) {
+    appConfig.serverUrl = appConfig.serverUrlProduction;
+  }
+
   return appConfig;
 };
 

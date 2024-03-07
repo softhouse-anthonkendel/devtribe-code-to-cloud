@@ -1,3 +1,4 @@
 {
-  "serverUrl": "http://localhost:9090"
+  "serverUrl": "http://localhost:9090",
+  "serverUrlProduction": "https://yj66ajyyub.execute-api.eu-north-1.amazonaws.com/prod"
 }
