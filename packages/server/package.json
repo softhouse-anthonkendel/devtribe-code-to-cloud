@@ -10,7 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "@aws-sdk/client-dynamodb": "3.525.0",
-    "@aws-sdk/util-dynamodb": "3.529.1"
+    "@aws-sdk/util-dynamodb": "3.529.1",
+    "serverless-http": "3.2.0"
   },
   "devDependencies": {
     "@types/node": "20.11.24",

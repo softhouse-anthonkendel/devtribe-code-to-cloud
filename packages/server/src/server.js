@@ -11,7 +11,7 @@ const buildResponse = (response, args = {}) => {
   response.end(JSON.stringify(args?.body ?? {}));
 };
 
-const server = http.createServer(async (request, response) => {
+export const server = http.createServer(async (request, response) => {
   const path = request.url;
   logger.info("path: ", path);
 

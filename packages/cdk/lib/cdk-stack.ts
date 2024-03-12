@@ -35,7 +35,7 @@ export class CdkStack extends cdk.Stack {
 
     const serverLambda = new lambda.Function(this, buildId("Server"), {
       runtime: lambda.Runtime.NODEJS_20_X,
-      handler: "src/lambda-raw.handler",
+      handler: "src/lambda-wrapped.handler",
       code: lambda.Code.fromAsset(pathFromRoot("packages/server")),
       timeout: cdk.Duration.seconds(30),
       environment: {
