@@ -26,5 +26,5 @@ export const server = http.createServer(async (request, response) => {
 });
 
 server.listen(PORT, HOSTNAME, () => {
-  console.info(`server listening on http://${HOSTNAME}:${PORT}`);
+  logger.info(`server listening on http://${HOSTNAME}:${PORT}`);
 });
