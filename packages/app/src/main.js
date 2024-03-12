@@ -23,7 +23,7 @@ const getAppConfig = async () => {
 const getBurgers = async () => {
   const { serverUrl } = await getAppConfig();
 
-  const response = await fetch(serverUrl + "/burgers");
+  const response = await fetch(`${serverUrl}/burgers`);
   const json = response.json();
 
   return json;
