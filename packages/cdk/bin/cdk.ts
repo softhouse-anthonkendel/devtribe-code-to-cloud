@@ -14,3 +14,11 @@ new CdkStack(app, "CodeToCloudStack", {
     region,
   },
 });
+
+new CdkStack(app, "LocalCodeToCloudStack", {
+  env: {
+    account,
+    region,
+  },
+  localstack: true,
+});

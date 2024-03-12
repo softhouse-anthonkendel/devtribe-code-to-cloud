@@ -12,9 +12,6 @@ const buildResponse = (response, args = {}) => {
 };
 
 const server = http.createServer(async (request, response) => {
-  logger.info("request: ", request);
-  logger.info("response: ", response);
-
   const path = request.url;
   logger.info("path: ", path);
 
